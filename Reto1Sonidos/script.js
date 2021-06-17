@@ -5,7 +5,7 @@ function sonido(evento){
     const tecla = document.querySelector(`.tecla[data-key="${evento.keyCode}"]`);
     
     if(!audio) return;
-    //se puede tocar las teclas superponiendo el audio
+    //see puede tocar las teclas superponiendo el audio
     audio.currentTime = 0;
     audio.play();
     //agrego a la tecla presionada la clase 'tocando' que es la que defini en el css
